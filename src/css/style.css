@@ -51,8 +51,8 @@ html {
 body {
    background-color: #F9F9F9;
    background: 
-   url(/src/css//images/rtriangle.svg) top right no-repeat, 
-   url(/src/css//images/ltriangle.svg) bottom left no-repeat;
+   url(images/rtriangle.svg) top right no-repeat, 
+   url(images/ltriangle.svg) bottom left no-repeat;
    font-family: 'Poppins';
    color: var(--color2);   
    font-size: 1.5rem;
@@ -859,8 +859,8 @@ input[type=file] {
 @media (max-width: 1100px) {
    body {
       background: 
-      url(/src/css//images/rtriangle.svg) top right/86px 86px no-repeat, 
-      url(/src/css//images/ltriangle.svg) bottom left/172px 172px no-repeat;
+      url(images/rtriangle.svg) top right/86px 86px no-repeat, 
+      url(images/ltriangle.svg) bottom left/172px 172px no-repeat;
    }
 
    header {
@@ -995,8 +995,8 @@ input[type=file] {
 @media (max-width: 800px ) {
    body {
       background: 
-      url(/src/css//images/rtriangle.svg) top right/86px 86px no-repeat, 
-      url(/src/css//images/ltriangle.svg) bottom left/86px 86px no-repeat;
+      url(images/rtriangle.svg) top right/86px 86px no-repeat,
+      url(images/ltriangle.svg) bottom left/86px 86px no-repeat;
    }
 
    header {
