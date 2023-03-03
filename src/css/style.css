@@ -51,8 +51,8 @@ html {
 body {
    background-color: #F9F9F9;
    background: 
-   url(../images/higher-triangle.svg) top right no-repeat, 
-   url(../images/bottom-triangle.svg) bottom left no-repeat;
+   url(/src/css//images/higher-triangle.svg) top right no-repeat, 
+   url(/src/css//images/bottom-triangle.svg) bottom left no-repeat;
    font-family: 'Poppins';
    color: var(--color2);   
    font-size: 1.5rem;
