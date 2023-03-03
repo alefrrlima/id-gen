@@ -720,6 +720,12 @@ input[type=file] {
    width: 5.5rem;
    background-color: var(--color1);
    border-radius: 5px;
+   padding: 0.5rem;
+}
+
+#hcard-qrcode img {
+   height: 4.5rem;
+   width: 4.5rem;;
 }
 
 /* ---------- vcard-filled ----------*/
@@ -816,6 +822,11 @@ input[type=file] {
    width: 5.5rem;
    border-radius: 5px;
    background-color: var(--color1);
+   padding: 0.5rem;
+}
+#vcard-qrcode img {
+   height: 4.5rem;
+   width: 4.5rem;;
 }
 
 .card-icon-fill {
