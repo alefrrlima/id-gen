@@ -1,0 +1,15 @@
+{
+  "name": "id-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre F. Lima",
+  "license": "ISC",
+  "dependencies": {
+    "cropperjs": "^1.5.13",
+    "npm": "^9.5.1"
+  }
+}
