@@ -158,7 +158,7 @@ pictureInput.addEventListener("change", (e) => {
    rawImage.src = ""
    sendToCropArea ()
    setTimeout(showCropperContainer, 300)
-   setTimeout(initCrop, 1000)
+   setTimeout(initCrop, 300)
 })
 
 // ----- picture info alert function ----- //
