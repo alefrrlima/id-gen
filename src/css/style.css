@@ -144,6 +144,14 @@ nav {
    align-items: center;
 }
 
+#slider-message {
+   color: var(--red3);
+   width: fit-content;
+   margin: 0 auto 0 auto;
+   font-size: 12.5px;
+   max-width: 30.5rem;
+}
+
 .nav-buttons {
    display: flex;
    flex-direction: row;

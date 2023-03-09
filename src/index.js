@@ -94,6 +94,7 @@ const vCardIconSeries = document.querySelector("#vcard-icon-series")
 const firstSlideButton = document.querySelector("#fsbutton")
 const leftControlButton = document.querySelector("#left-control-button")
 const rightControlButton = document.querySelector("#right-control-button")
+const sliderMessage = document.querySelector("#slider-message")
 const firstSlide = document.querySelector("#first-slide")
 const secondSlide = document.querySelector("#second-slide")
 const thirdSlide = document.querySelector("#third-slide")
@@ -253,6 +254,7 @@ submit.addEventListener("click", function(e) {
 
 hCard.addEventListener("click", function(e) {
    e.preventDefault()
+   sliderMessage.textContent = " "
    userData.layout = "horizontal"
    hCardBackground.style.display = "flex"
    vCardBackground.style.display = "none"
@@ -260,6 +262,7 @@ hCard.addEventListener("click", function(e) {
 
 vCard.addEventListener("click", function(e){
    e.preventDefault()
+   sliderMessage.textContent = " "
    userData.layout = "vertical"
    hCardBackground.style.display = "none"
    vCardBackground.style.display = "flex"
@@ -727,7 +730,11 @@ rightControlButton.addEventListener("click", function(e){
       console.log(userData.slide)
       hideSliderButtons ()
    }
-   else if (userData.slide == "third") {
+   else if (userData.slide == "third" && userData.layout == undefined) {
+      sliderMessage.textContent = "Por favor, selecione um layout para a sua ID."
+   }
+   else if (userData.slide == "third" && userData.layout != undefined) {
+      sliderMessage.textContent = " "
       displayFourthSlide ()
       userData.slide = "fourth"
       console.log(userData.slide)
