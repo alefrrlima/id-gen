@@ -724,7 +724,20 @@ firstSlideButton.addEventListener("click", function(e) {
 
 rightControlButton.addEventListener("click", function(e){
    e.preventDefault()
-   if (userData.slide == "fourth") {
+   if (userData.slide == "fourth" && userData.firstColor == undefined && userData.theme == undefined) {
+      sliderMessage.textContent = "Por favor, selecione um tema e uma cor para a sua ID."
+   }
+
+   else if (userData.slide == "fourth" && userData.firstColor != undefined && userData.theme == undefined) {
+      sliderMessage.textContent = "Por favor, selecione um tema para a sua ID."
+   }
+
+   else if (userData.slide == "fourth" && userData.firstColor == undefined && userData.theme != undefined) {
+      sliderMessage.textContent = "Por favor, selecione uma cor para a sua ID."
+   }
+
+   else if (userData.slide == "fourth" && userData.firstColor != undefined && userData.theme != undefined) {
+      sliderMessage.textContent = " "
       displayfourthSlideLS2 ()
       userData.slide = "fifth"
       console.log(userData.slide)
@@ -901,6 +914,6 @@ downloadButton.addEventListener("click", function(e){
          jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
        };
        html2pdf().set(opt).from(finalCard).save();
-   }, 500)
+   }, 2000)
    setTimeout(reload, 20000)
 })
